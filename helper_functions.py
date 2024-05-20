@@ -108,4 +108,4 @@ def tabular_shap_vals(explanation):
     mean_abs_SHAP_df.loc[:, 'Mean abs SHAP %'] = (mean_abs_SHAP_df.loc[:, 'Mean abs SHAP'] /
                                                     mean_abs_SHAP_df.loc[:, 'Mean abs SHAP'].sum()) * 100
     mean_abs_SHAP_df['Cumulative sum %'] = mean_abs_SHAP_df.loc[:, 'Mean abs SHAP %'].cumsum()
-    display(mean_abs_SHAP_df)
+    return mean_abs_SHAP_df
