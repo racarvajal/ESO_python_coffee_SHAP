@@ -109,3 +109,21 @@ def tabular_shap_vals(explanation):
                                                     mean_abs_SHAP_df.loc[:, 'Mean abs SHAP'].sum()) * 100
     mean_abs_SHAP_df['Cumulative sum %'] = mean_abs_SHAP_df.loc[:, 'Mean abs SHAP %'].cumsum()
     return mean_abs_SHAP_df
+
+def predict_galaxy(image: np.array):
+
+    image = update_dimension_galaxy(image)
+
+    # predict
+    median = np.nanmedian(image, axis=(1, 2, 3))
+    mean   = np.nanmean(image, axis=(1, 2, 3))
+    difference = mean - median
+    prediction = np.piecewise(difference, [difference < 0, difference >= 0], [0, 1])
+
+    return prediction
+
+def update_dimension_galaxy(image: np.array) -> np.array:
+
+    if image.ndim == 3:
+        return image[np.newaxis, ...]
+    return image
