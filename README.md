@@ -1,6 +1,8 @@
 # ESO_python_coffee_SHAP
 
-[![My Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/racarvajal/ESO_python_coffee_SHAP/main?filepath=Intro_SHAP.ipynb)[![nbviewer](https://img.shields.io/badge/view%20in-nbviewer-orange)](https://nbviewer.org/github/racarvajal/ESO_python_coffee_SHAP/blob/main/Intro_SHAP.ipynb)
+[![My Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/racarvajal/ESO_python_coffee_SHAP/main?filepath=Intro_SHAP.ipynb) [![nbviewer](https://img.shields.io/badge/view%20in-nbviewer-orange)](https://nbviewer.org/github/racarvajal/ESO_python_coffee_SHAP/blob/main/Intro_SHAP.ipynb) <a target="_blank" href="https://lightning.ai/new?repo_url=https%3A%2F%2Fgithub.com%2Fracarvajal%2FESO_python_coffee_SHAP">
+  <img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/app-2/studio-badge.svg" alt="Open in Studio" />
+</a>
 
 Introduction to SHAP analysis of ML models
 
